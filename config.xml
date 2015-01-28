@@ -10,14 +10,14 @@
     
     <preference name="phonegap-version" value="3.5.0" />
     
-    <name>Sample Config.xml</name>
+    <name>Ejemplo Config.xml</name>
     
     <description>
-        An example for phonegap build docs.
+        Esto es solo un ejemplo.
     </description>
     
-    <author href="http://yoursite.com" email="you@youremail.com">
-        Your Name
+    <author href="http://yoursite.com" email="joseduardofrias@gmail.com">
+        Jose Frias
     </author>
     
 </widget>
