@@ -9,14 +9,12 @@ import javax.servlet.http.HttpServletResponse;
 
 public class PruebaServlet extends HttpServlet{
 
-	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		String action = req.getParameter("action");
 		System.out.println("Llego get:"+action);
 	}
 
-	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		String action = req.getParameter("action");
