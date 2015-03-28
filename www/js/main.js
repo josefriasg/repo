@@ -8,9 +8,8 @@ $(document).ready(init);
 $( document ).on( "click", "#loginButton", function () {
 	var username = $("#username").val();
 	var password = $("#password").val();
-	alert(password);
 	//onLoading(); 
-	$.getJSON("/prueba2/Prueba", {action : 'login', username : username, password : password})
+	$.getJSON("/prueba/Prueba", {action : 'login', username : username, password : password})
 	.done(onLoginSuccessfull)
 	.fail(function(data){
 		console.log("Error Unexpected. Try again...");	
@@ -23,7 +22,11 @@ $( document ).on( "click", "#loginButton", function () {
 });
 
 function onLoginSuccessfull(data){	
-	alert("bien");
+	if (data.result=="OK"){
+		alert(data.pojo.username);
+	}else{
+		alert(data.message);
+	}
 	/*if(data.success){		
 		window.location = "main.html";
 	} else {
